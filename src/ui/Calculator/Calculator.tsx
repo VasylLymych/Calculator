@@ -10,6 +10,7 @@ const Calculator = (): JSX.Element => {
     setResult(eval(statement));
     setStatement('');
   };
+
   const clear = (): void => {
     setStatement((statement: string): string => statement.slice(0, statement.length - 1));
     setResult('');
