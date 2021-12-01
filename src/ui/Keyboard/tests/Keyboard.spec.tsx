@@ -5,9 +5,10 @@ import Keyboard from "../Keyboard";
 describe('Screen component tests', (): void => {
     const setStatement: Function = jest.fn();
     const getResult: Function = jest.fn();
+    const clear: Function = jest.fn();
 
     beforeEach((): void => {
-        render(<Keyboard getResult={getResult} setStatement={setStatement}/>);
+        render(<Keyboard getResult={getResult} setStatement={setStatement} clear={clear}/>);
     });
 
     it('Should call setStatement function', (): void => {
